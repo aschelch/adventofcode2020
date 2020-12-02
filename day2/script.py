@@ -3,7 +3,7 @@ import re
 file = open("input.txt", "r")
 lines = [line.rstrip('\n') for line in file]
 
-# count passwords that satify policy (letter contains between x and y times)
+# count passwords that satify policy : letter contained between x and y times
 count = 0
 for i in range(len(lines)):
     res = re.search('([0-9]+)-([0-9]+) ([a-z]): (.*)', lines[i], re.IGNORECASE)
@@ -19,7 +19,7 @@ for i in range(len(lines)):
 
 print(count)
 
-# count passwords that satify policy (letter if at least once in position x or y)
+# count passwords that satify policy : letter exactly once in position x or y
 count = 0
 for i in range(len(lines)):
     res = re.search('([0-9]+)-([0-9]+) ([a-z]): (.*)', lines[i], re.IGNORECASE)
