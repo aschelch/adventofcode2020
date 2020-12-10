@@ -25,7 +25,7 @@ print('3-jolt diff', diff3)
 print('Part 1 result =', diff1*diff3)
 
 
-# Part 2 
+# Part 2 dirty solution..
 
 cache = dict()
 def numberToGoTo(start, target):
@@ -52,10 +52,17 @@ def numberToGoTo(start, target):
 print('Part 2 result =', numberToGoTo(0, max(outlets)))
 
 
-# Part2 bis
+# Part2 better solution
 
+path = dict()
 path[0] = 1
 for outlet in outlets:
-    path[outlet] = path[outlet-1]+path[outlet-2]+path[outlet-3]
-
-print(path)
+    
+    path[outlet] = 0
+    if outlet-1 in path:
+        path[outlet] += path[outlet-1]
+    if outlet-2 in path:
+        path[outlet] += path[outlet-2]
+    if outlet-3 in path:
+        path[outlet] += path[outlet-3]
+print('Part 2 result (better) =', path[outlets[-1]])
