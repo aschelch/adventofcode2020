@@ -50,3 +50,12 @@ def numberToGoTo(start, target):
     return res
 
 print('Part 2 result =', numberToGoTo(0, max(outlets)))
+
+
+# Part2 bis
+
+path[0] = 1
+for outlet in outlets:
+    path[outlet] = path[outlet-1]+path[outlet-2]+path[outlet-3]
+
+print(path)
