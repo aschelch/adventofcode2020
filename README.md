@@ -17,6 +17,7 @@ My personal repo for [Advent Of Code 2020](https://adventofcode.com/2020)
 :white_check_mark: [Day 13: Shuttle Search](https://adventofcode.com/2020/day/13) - [My solution](day13/script.py)  
 :white_check_mark: [Day 14: Docking Data](https://adventofcode.com/2020/day/14) - [My solution](day14/script.py)  
 :white_check_mark: [Day 15: Rambunctious Recitation](https://adventofcode.com/2020/day/15) - [My solution](day15/script.py)  
+:white_check_mark: [Day 16: Ticket Translation](https://adventofcode.com/2020/day/16) - [My solution](day16/script.py)  
 
 
 
